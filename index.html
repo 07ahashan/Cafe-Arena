@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        section{
+            margin-left: 20%;
+            margin-top: 80px;
+            height: 340px;
+            width: 850px;
+            border: 1px solid black;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        .head{
+            height: 50px;
+            width: 850px;
+            background-color: rgb(117, 4, 4);
+
+        }
+        .footer{
+            margin-top: -32.5px;
+            height: 50px;
+            width: 850px;
+            background-color: rgb(117, 4, 4);
+            position: absolute;
+        }
+        .inp{
+            height: 273px;
+            width: 0px;
+            border-right: none;
+            border-bottom: none;
+            border-top: none;
+            border-left: 2px solid gray;
+            margin-left: 41%;
+
+        }
+        .content{
+            position: absolute;
+            margin-bottom: 20%;
+            margin-left: 26%;
+            margin-top: 70px;
+        }
+        #sel{
+            font-family: sans-serif;
+        }
+        .log{
+            height: 25px;
+            width: 70px;
+            font-family: sans-serif;
+            font-weight: bold;
+            border: 2px solid rgb(175, 171, 171);
+            margin-left: 150px;
+        }
+        .btn{
+            height: 25px;
+            width: 70px;
+            font-family: sans-serif;
+            font-weight: bold;
+            border: 2px solid rgb(175, 171, 171);
+            margin-top: 10px;
+        }
+        .pass{
+            margin-left: 2px;
+            margin-top: 5px;
+        }
+        .domain{
+            position: absolute;
+            margin-left: 19px;
+            margin-top: 9px;
+        }
+        .first{
+            margin-top: 9px;
+        }
+        .img{
+            height: 210px;
+            width: 210px;
+            position: absolute;
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+     <div class="head"></div>
+        <div class="container"> 
+            <img src="./logo.png" alt="" class="img">
+        <div class="content">
+          <span class="user">Username: <input type="text" ></span> 
+          <div class="first">  <span class="pass">Password: <input type="password"></span></div>
+            <span class="domain">Domain: 
+                <select name="option" id="sel">
+                    <option value="ggi">ggi.local</option>
+                    <option value="fire">Firebox-DB</option>
+                    <option value="gce">gce.local</option>
+                    </select>
+            </span><br><br>
+            <a href=""><button class="log" >Login</button></a>
+            <a href=""><button class="btn">Reset</button></a>
+        </div>
+            <input type="text" class="inp">
+        </div>
+
+        <div class="footer"></div>
+
+    </section>
+    
+</body>
+</html>
